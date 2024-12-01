@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Electricals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes zoomIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .animate-fade {
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      .animate-zoom {
+        animation: zoomIn 1.2s ease-in-out forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header
+      class="bg-gradient-to-r from-blue-900 to-blue-500 text-white py-4 shadow-lg sticky top-0 z-50"
+    >
+      <div class="container mx-auto flex justify-between items-center px-4 lg:px-20 animate-fade">
+        <h1 class="text-2xl lg:text-4xl font-extrabold tracking-wide">
+          <i class="fas fa-bolt"></i> Star Electricals
+        </h1>
+        <nav>
+          <ul class="flex space-x-4 lg:space-x-8 text-sm lg:text-lg font-medium">
+            <li><a class="hover:underline" href="#about">About</a></li>
+            <li><a class="hover:underline" href="#branches">Branches</a></li>
+            <li><a class="hover:underline" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative bg-cover bg-center h-[400px] lg:h-[600px]"
+      style="
+        background-image: url('https://storage.googleapis.com/a1aa/image/82oOVfbv5VyNO65GeBOefMc49mzXoZ8ZXkbqeWrw4HtpWxzeE.jpg');
+      "
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      >
+        <div class="text-center text-white px-6 animate-zoom">
+          <h2 class="text-3xl lg:text-5xl font-extrabold mb-4">
+            Welcome to <span class="text-yellow-300">Star Electricals</span>
+          </h2>
+          <p class="text-lg lg:text-xl font-medium">
+            Your one-stop shop for all electrical, hardware, and plumbing needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-gray-100 text-center">
+      <div class="container mx-auto px-4 lg:px-20 animate-fade">
+        <h2 class="text-3xl lg:text-4xl font-bold text-blue-900 mb-6">About Us</h2>
+        <p class="text-base lg:text-xl text-gray-700 max-w-3xl mx-auto">
+          Star Electricals offers a wide range of products, from high-quality
+          electrical supplies to plumbing and hardware solutions. With
+          dedication and trust built over years, we are your reliable partner
+          for all technical needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Branches Section -->
+<section
+  id="branches"
+  class="py-16 bg-gradient-to-r from-gray-200 to-gray-300"
+>
+  <div class="container mx-auto px-4 lg:px-20 text-center">
+    <h2 class="text-3xl lg:text-4xl font-bold text-blue-900 mb-10">Our Branches</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Branch 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-500 animate-fade">
+        <img
+          src="https://i.imgur.com/ZypE8o4.jpeg"
+          alt="Branch 1"
+          class="w-full h-40 lg:h-48 object-cover rounded-t-lg"
+        />
+        <h3 class="text-xl lg:text-2xl font-bold mt-4">Branch 1</h3>
+        <p class="mt-2 text-gray-600">
+          Located at Star Plaza Complex, Main Rd, opposite Vaibhav Jewellery, Nad Junction, Gopalapatnam, Simhachalam, Visakhapatnam, Andhra Pradesh 530027.
+        </p>
+        <p class="mt-2">
+          <a
+            class="text-blue-500 hover:underline"
+            href="https://maps.app.goo.gl/kUqEaijdPGkNLJdp7"
+            target="_blank"
+          >
+            Find us on Google Maps
+          </a>
+        </p>
+      </div>
+
+      <!-- Branch 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-500 animate-fade">
+        <img
+          src="https://i.imgur.com/PdE9UGo.jpeg"
+          alt="Branch 2"
+          class="w-full h-40 lg:h-48 object-cover rounded-t-lg"
+        />
+        <h3 class="text-xl lg:text-2xl font-bold mt-4">Branch 2</h3>
+        <p class="mt-2 text-gray-600">
+          Located at 7-130, near Pydithallemma Temple, opposite Gowri Kalyana Mandapam, Old Adavivaram, Sri Sai Nagar, Simhachalam, Visakhapatnam, Andhra Pradesh 530028.
+        </p>
+        <p class="mt-2">
+          <a
+            class="text-blue-500 hover:underline"
+            href="https://maps.app.goo.gl/4FB6tQbQtzVFDBK77?g_st=com.google.maps.preview.copy"
+            target="_blank"
+          >
+            Find us on Google Maps
+          </a>
+        </p>
+      </div>
+
+      <!-- Branch 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-500 animate-fade">
+        <img
+          src="https://i.imgur.com/se85wGe.jpeg"
+          alt="Branch 3"
+          class="w-full h-40 lg:h-48 object-cover rounded-t-lg"
+        />
+        <h3 class="text-xl lg:text-2xl font-bold mt-4">Branch 3</h3>
+        <p class="mt-2 text-gray-600">
+          Located near Narsimha Theatre, Nad Junction, Gopalapatnam, Simhachalam, Visakhapatnam, Andhra Pradesh 530027.
+        </p>
+        <p class="mt-2">
+          <a
+            class="text-blue-500 hover:underline"
+            href="https://maps.app.goo.gl/aQRQo2TC4nAeiBqN7?g_st=com.google.maps.preview.copy"
+            target="_blank"
+          >
+            Find us on Google Maps
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Info Section -->
+<section id="contact" class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-500 relative mb-8 mt-16">
+  <!-- Profile Header Section -->
+  <div class="flex flex-col sm:flex-row items-center sm:items-start mb-6">
+    <img
+      src="https://i.imgur.com/SABLqK9.jpeg"
+      alt="Lalith Kumar Patel"
+      class="w-24 h-24 rounded-full border-4 border-blue-500 shadow-lg mb-4 sm:mb-0"
+    />
+    <div class="sm:ml-6 text-center sm:text-left">
+      <h3 class="text-2xl font-semibold text-gray-800">Lalith Kumar Patel</h3>
+      <p class="text-sm lg:text-base text-gray-600">Owner, Star Electricals</p>
+    </div>
+  </div>
+
+  <!-- Contact Information Section -->
+  <div class="space-y-6">
+    <!-- Phone Numbers Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <!-- Phone Number 1 -->
+      <div class="flex items-center justify-start space-x-4">
+        <i class="fas fa-phone text-blue-500 text-2xl"></i>
+        <a class="text-blue-500 hover:underline text-lg" href="tel:+919666081351">9666081351</a>
+      </div>
+      <!-- Phone Number 2 -->
+      <div class="flex items-center justify-start space-x-4">
+        <i class="fas fa-phone text-blue-500 text-2xl"></i>
+        <a class="text-blue-500 hover:underline text-lg" href="tel:+917386331191">7386331191</a>
+      </div>
+      <!-- Phone Number 3 -->
+      <div class="flex items-center justify-start space-x-4">
+        <i class="fas fa-phone text-blue-500 text-2xl"></i>
+        <a class="text-blue-500 hover:underline text-lg" href="tel:+918912531351">08912531351</a>
+      </div>
+    </div>
+
+    <!-- WhatsApp Section -->
+    <div class="flex items-center justify-start space-x-4 mb-6">
+      <i class="fab fa-whatsapp text-green-500 text-2xl"></i>
+      <a class="text-green-500 hover:underline text-lg" href="https://wa.me/919666081351">9666081351 (WhatsApp)</a>
+    </div>
+
+    <!-- Social Media Links Section -->
+    <div class="flex justify-center sm:justify-start space-x-8 mt-8">
+      <a class="text-blue-500 hover:text-blue-700 transition duration-300" href="https://www.instagram.com/stargplvsp/profilecard/?igsh=Y3NkdGZ5dzlpeW1k">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a class="text-blue-700 hover:text-blue-900 transition duration-300" href="https://www.facebook.com/share/18eEPQ85yM/">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a class="text-green-500 hover:text-green-700 transition duration-300" href="https://wa.me/919666081351">
+        <i class="fab fa-whatsapp fa-2x"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Find Us on IndiaMart Section -->
+<section class="bg-gradient-to-r from-blue-500 to-blue-700 py-16 text-white">
+  <div class="container mx-auto text-center px-6 lg:px-20">
+    <h2 class="text-3xl lg:text-4xl font-bold mb-6 animate-fade">Find Us on IndiaMart</h2>
+    <p class="text-lg lg:text-xl mb-8">
+      Explore our range of electrical products and services on our official IndiaMart page. Click below to visit our profile.
+    </p>
+    <div class="relative inline-block">
+      <!-- Button -->
+      <a
+        href="https://www.indiamart.com/star-electricals-visakhapatnam/aboutus.html"
+        target="_blank"
+        id="indiaMartLink"
+        class="bg-yellow-500 text-blue-900 font-semibold text-xl py-3 px-8 rounded-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:bg-yellow-400"
+      >
+        <i class="fas fa-shopping-cart mr-2"></i>
+        Visit IndiaMart Profile
+      </a>
+      <!-- Hover effect -->
+      <div class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-0 hover:opacity-30 rounded-lg transition-opacity duration-300"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional: JavaScript for Debugging (Checking click events) -->
+<script>
+  document.getElementById("indiaMartLink").addEventListener("click", function (e) {
+    console.log("Link clicked!");  // Check if the event is triggered every time
+  });
+</script>
+
+<!-- Optional: Tailwind CSS animation for fade-in effect -->
+<style>
+  @keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .animate-fade {
+    animation: animate-fade 2s ease-out;
+  }
+</style>
+<br>
+<br>
+<div class="max-w-full mx-auto p-4">
+    <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.9948272768875!2d83.2250797!3d17.744882899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3967d96ed87cb5%3A0x89430868ca786680!2sStar%20Electricals!5e0!3m2!1sen!2sin!4v1733053425424!5m2!1sen!2sin" 
+            class="w-full h-64 sm:h-80 lg:h-96 xl:h-112 transition-all duration-500 ease-in-out transform hover:scale-105"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-900 to-blue-500 text-white py-6 mt-20">
+      <div class="container mx-auto text-center">
+        <p class="text-sm lg:text-lg">
+          © 2024 Proudly Crafted by <span class="font-bold">Cezen Software Solutions</span>. 
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
